@@ -23,7 +23,7 @@ public class StudentRestController {
 		return student;
 	}
 	
-	 @RequestMapping("/student/viewall")
+	@RequestMapping("/student/viewall")
     public List<StudentModel> view (Model model)
     {
         List<StudentModel> students = studentService.selectAllStudents ();

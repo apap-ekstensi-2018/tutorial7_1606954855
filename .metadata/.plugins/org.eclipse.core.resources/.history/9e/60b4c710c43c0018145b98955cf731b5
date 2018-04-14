@@ -1,0 +1,10 @@
+package com.example.dao;
+
+import com.example.model.StudentModel;
+
+import groovyjarjarantlr.collections.List;
+
+public interface StudentDAO {
+	StudentModel selectStudent (String npm);
+	List<StudentModel> selectAllStudents ();
+}
